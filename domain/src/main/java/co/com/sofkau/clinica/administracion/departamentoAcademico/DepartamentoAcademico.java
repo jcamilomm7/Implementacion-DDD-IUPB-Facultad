@@ -14,21 +14,12 @@ public class DepartamentoAcademico extends AggregateEvent<DepartamentoAcademicoI
     protected Set<ProgramaId> programaId;
     protected Set<Docente> docente;
 
-
-    //Constructores
-    public DepartamentoAcademico(DepartamentoAcademicoId entityId, Nombre nombre) {
-        super(entityId);
-        appendChange(new ArchivoCreado(nombre)).apply();
-        subscribe(new ArchivoEventChange(this));
-    }
-
     public DepartamentoAcademico(DepartamentoAcademicoId entityId) {
         super(entityId);
-        subscribe(new ArchivoEventChange(this));
     }
 
 
-    public Nombre nombre(){
-        return nombre;
-    }
+    //Constructores
+
+
 }

@@ -1,12 +1,9 @@
 package co.com.sofkau.clinica.administracion.laboratorio;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofka.domain.generic.DomainEvent;
 
-import co.com.sofkau.clinica.administracion.laboratorio.events.*;
 import co.com.sofkau.clinica.administracion.laboratorio.values.*;
 
-import java.util.List;
 import java.util.Set;
 
 public class Laboratorio extends AggregateEvent<LaboratorioId> {

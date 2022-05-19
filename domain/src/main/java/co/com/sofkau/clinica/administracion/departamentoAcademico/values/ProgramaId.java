@@ -1,4 +1,4 @@
-package co.com.sofkau.clinica.administracion.departamentoAcademico;
+package co.com.sofkau.clinica.administracion.departamentoAcademico.values;
 
 import co.com.sofka.domain.generic.Identity;
 
