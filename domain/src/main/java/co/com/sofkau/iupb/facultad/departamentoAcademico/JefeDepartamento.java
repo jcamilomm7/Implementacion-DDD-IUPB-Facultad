@@ -12,4 +12,8 @@ public class JefeDepartamento extends Entity<JefeDepartamentoId> {
         super(entityId);
         this.nombre = nombre;
     }
+
+    public Nombre getNombre() {
+        return nombre;
+    }
 }

@@ -12,7 +12,7 @@ public class AsignaturaAgregada extends DomainEvent {
     private final AsignaturaId asignaturaId;
     private final Descripcion descripcion;
 
-    public AsignaturaAgregada(Nombre nombre, AsignaturaId asignaturaId, Descripcion descripcion) {
+    public AsignaturaAgregada(AsignaturaId asignaturaId) {
         super("co.com.sofkau.iupb.facultad.programa.events.AsignaturaAgregada");
         this.nombre = nombre;
         this.asignaturaId = asignaturaId;

@@ -12,4 +12,8 @@ public class Docente  extends Entity<DocenteId> {
         super(entityId);
         this.nombre = nombre;
     }
+
+    public Nombre getNombre() {
+        return nombre;
+    }
 }

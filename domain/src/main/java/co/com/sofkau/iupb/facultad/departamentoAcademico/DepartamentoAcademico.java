@@ -1,10 +1,11 @@
 package co.com.sofkau.iupb.facultad.departamentoAcademico;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofkau.iupb.facultad.departamentoAcademico.values.DepartamentoAcademicoId;
-import co.com.sofkau.iupb.facultad.departamentoAcademico.values.LaboratorioId;
-import co.com.sofkau.iupb.facultad.departamentoAcademico.values.Nombre;
-import co.com.sofkau.iupb.facultad.departamentoAcademico.values.ProgramaId;
+import co.com.sofkau.iupb.facultad.departamentoAcademico.events.DocenteAgregado;
+import co.com.sofkau.iupb.facultad.departamentoAcademico.values.*;
+import co.com.sofkau.iupb.facultad.programa.Asignatura;
+import co.com.sofkau.iupb.facultad.programa.events.AsignaturaAgregada;
+import co.com.sofkau.iupb.facultad.programa.values.AsignaturaId;
 
 import java.util.Set;
 
@@ -21,8 +22,10 @@ public class DepartamentoAcademico extends AggregateEvent<DepartamentoAcademicoI
         super(entityId);
     }
 
-
-    //Constructores
+    public void AgregarDocente(Docente docente){
+        var docenteId = new DocenteId();
+        appendChange(new DocenteAgregado(docenteId)).apply();
+    }
 
 
 }

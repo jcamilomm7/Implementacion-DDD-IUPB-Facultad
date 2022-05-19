@@ -10,8 +10,10 @@ public class Asignatura extends Entity<AsignaturaId> {
     public Nombre nombre;
     public Descripcion descripcion;
 
-
-    public Asignatura(AsignaturaId entityId) {
+    public Asignatura(AsignaturaId entityId, Nombre nombre, Descripcion descripcion) {
         super(entityId);
+        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
+
 }

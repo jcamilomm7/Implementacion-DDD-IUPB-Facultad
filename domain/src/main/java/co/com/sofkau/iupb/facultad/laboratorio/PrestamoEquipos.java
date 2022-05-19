@@ -1,10 +1,9 @@
 package co.com.sofkau.iupb.facultad.laboratorio;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofkau.iupb.facultad.departamentoAcademico.values.Nombre;
 import co.com.sofkau.iupb.facultad.laboratorio.values.Credencial;
 import co.com.sofkau.iupb.facultad.laboratorio.values.Estado;
-import co.com.sofkau.iupb.facultad.laboratorio.values.LaboratorioId;
+import co.com.sofkau.iupb.facultad.laboratorio.values.Nombre;
 import co.com.sofkau.iupb.facultad.laboratorio.values.PrestamoEquiposId;
 
 public class PrestamoEquipos  extends Entity<PrestamoEquiposId> {

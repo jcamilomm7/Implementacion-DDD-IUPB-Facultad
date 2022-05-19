@@ -2,6 +2,7 @@ package co.com.sofkau.iupb.facultad.programa.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofkau.iupb.facultad.departamentoAcademico.values.Nombre;
+import co.com.sofkau.iupb.facultad.programa.Asignatura;
 import co.com.sofkau.iupb.facultad.programa.values.AsignaturaId;
 import co.com.sofkau.iupb.facultad.programa.values.Descripcion;
 
@@ -16,6 +17,8 @@ public class AgregarAsignatura extends Command {
         this.asignaturaId = asignaturaId;
         this.descripcion = descripcion;
     }
+
+
 
     public Nombre getNombre() {
         return nombre;
